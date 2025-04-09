@@ -21,28 +21,39 @@ obj.getData()
 
 """
 
-class Calculator:
+# class Calculator:
+#
+#     num=100
+#
+#     #default constructor
+#
+#     def __init__(self , a, b):
+#         self.firstnumber = a
+#         self.secondnumber = b
+#
+#     def getData(self):
+#         print("I am mayur")
+#
+#     def Summation(self):
+#         return  self.firstnumber + self.secondnumber + Calculator.num
+#
+#
+# obj = Calculator(2,3)
+#
+# print(obj.num)
+# obj.getData()
+# print(obj.Summation())
+#
+# obj1 = Calculator(100, 200)
+# print(obj1.Summation())
 
-    num=100
 
-    #default constructor
+#parent class
+class person:
+    def __init__(self,firstname,lastname):
+        self.firstname=firstname
+        self.lastname=lastname
 
-    def __init__(self , a, b):
-        self.firstnumber = a
-        self.secondnumber = b
+    def my_fun(self):
+        print("my name is "+ self.firstname, self.lastname)
 
-    def getData(self):
-        print("I am mayur")
-
-    def Summation(self):
-        return  self.firstnumber + self.secondnumber + Calculator.num
-
-
-obj = Calculator(2,3)
-
-print(obj.num)
-obj.getData()
-print(obj.Summation())
-
-obj1 = Calculator(100, 200)
-print(obj1.Summation())

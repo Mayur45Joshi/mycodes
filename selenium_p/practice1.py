@@ -177,18 +177,27 @@ from http import client
 
 
 
-def are_anagrams(str1, str2):
-  return sorted(str1) == sorted(str2)
+# def are_anagrams(str1, str2):
+#   return sorted(str1) == sorted(str2)
+#
+# string1 = input("Enter the first string: ")
+# string2 = input("Enter the second string: ")
+# if are_anagrams(string1, string2):
+#   print("Anagrams")
+# else:
+#   print("Not anagrams")
 
-string1 = input("Enter the first string: ")
-string2 = input("Enter the second string: ")
-if are_anagrams(string1, string2):
-  print("Anagrams")
-else:
-  print("Not anagrams")
 
 
+def char_count(input_string):
+    string="my name is mayur"
+    char_count = {}
+    for char in input_string:
+        char_count[char] = char_count.get(char,0)+1
 
+    return char_count
+
+char_count()
 
 
 

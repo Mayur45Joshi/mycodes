@@ -35,7 +35,7 @@ print("all option ", len(all_options))
 
 #selecting option from dropdown without ussing builtin methds
 for opt in all_options:
-    if opt.text== "Male":
+    if opt.text == "Male":
         opt.click()
 
 time.sleep(2)
@@ -47,7 +47,7 @@ dropdown.select_by_visible_text("Male")
 driver.find_element(By.XPATH, "//input[@type= 'submit' ]") .click()
 
 #to print any message available on UI
-msg=driver.find_element(By.CLASS_NAME, "alert").text
+msg = driver.find_element(By.CLASS_NAME, "alert").text
 print(msg)
 
 assert "Success" in msg

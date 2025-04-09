@@ -1,18 +1,38 @@
-from oppsconcept import Calculator
+# from oppsconcept import Calculator
+#
+#
+# class FinalSum(Calculator):
+#
+#     num2= 100
+#
+#     def __init__(self):
+#         Calculator.__init__(self, 3,4,)
+#
+#     def FinalTotal(self):
+#
+#         return self.Summation() + self.num2
+#
+# obj= FinalSum()
+#
+# print(obj.FinalTotal())
 
 
-class FinalSum(Calculator):
 
-    num2= 100
+from oppsconcept import person
 
-    def __init__(self):
-        Calculator.__init__(self, 3,4,)
+#child class
+class student(person):
+    #def __init__(self,firstname,lastname):
+    def __init__(self,firstname,lastname,year):
+        super().__init__(firstname,lastname)
+        self.year=year
 
-    def FinalTotal(self):
+    def welcome(self):
+        print("Welcome " , self.firstname, self.lastname, "to the class " , self.year)
 
-        return self.Summation() + self.num2
 
-obj= FinalSum()
-
-print(obj.FinalTotal())
+s1=student("mayur","joshi",2019)
+# print(s1.my_fun())
+# print(s1.year)
+s1.welcome()
 

@@ -51,14 +51,24 @@
 
 
 
-#nonlocal variable
+# #nonlocal variable
+#
+# def myfunc1():
+#     x="june"
+#     def myfunc2():
+#         nonlocal x
+#         x="hello"
+#     myfunc2()
+#     return x
+# print(myfunc1())
 
-def myfunc1():
-    x="june"
-    def myfunc2():
-        nonlocal x
-        x="hello"
-    myfunc2()
-    return x
-print(myfunc1())
+
+import datetime
+x=datetime.datetime.now()
+print(x)
+print(x.year)
+print(x.month)
+#The date contains year, month, day, hour, minute, second, and microsecond.
+
+
 

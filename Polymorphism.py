@@ -59,3 +59,7 @@
 #     x.move()
 
 
+month="may"
+age=18
+print(id(month))
+print(id(age))

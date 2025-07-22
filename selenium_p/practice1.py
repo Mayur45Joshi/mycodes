@@ -189,16 +189,30 @@ from http import client
 
 
 
-def char_count(input_string):
-    string="my name is mayur"
-    char_count = {}
-    for char in input_string:
-        char_count[char] = char_count.get(char,0)+1
-
-    return char_count
-
-char_count()
-
-
+# def char_count(input_string):
+#     string="my name is mayur"
+#     char_count = {}
+#     for char in input_string:
+#         char_count[char] = char_count.get(char,0)+1
+#
+#     return char_count
+#
+# char_count()
 
 
+# fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+# newlist = []
+#
+# for x in fruits:
+#   if "a" in x:
+#     newlist.append(x)
+#
+# print(newlist)
+
+
+def my_function(x):
+  return 5 * x
+
+print(my_function(3))
+print(my_function(5))
+print(my_function(9))

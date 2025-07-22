@@ -1,8 +1,11 @@
+import time
+
 import flag
 from selenium import webdriver
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
+from PIL import Image
 
 driver = webdriver.Chrome()
 
@@ -39,20 +42,25 @@ driver.maximize_window()
 #>>>>>scroll down by pixel  way  1
 
 # driver.execute_script("window.scrollBy(0,3000)","")
+# time.sleep(10)
 # value = driver.execute_script("return window.pageYOffset;")
 # print("Number of pixel moved:",value)
 
 #>>>>>>scroll down the page till the page visible   way 2   >>>>>>>>>>>>>>>
 
-# Flag = driver.find_element(By.XPATH,"//img[@alt='Flag of India']")
-# driver.execute_script("arguments[0].scrollIntoView();",flag)
-# value=driver.execute_script("return window.pageYOffset;")
-# print("Number of pixels moved:",value)
+Flag = driver.find_element(By.XPATH,"//img[@alt='Flag of India']")
+# Flag.screenshot("flagimg.png")
+element=driver.execute_script("arguments[0].scrollIntoView();",Flag)
+driver.save_screenshot("flag.png")
+time.sleep(10)
+value=driver.execute_script("return window.pageYOffset;")
+print("Number of pixels moved:",value)
 
 
 # scroll down page till height
 
 driver.execute_script("window.scrollBy(0,document.body.scrollHeight)")
+time.sleep(10)
 value = driver.execute_script("return window.pageYOffset;")
 print("Number of pixels moved:",value)
 

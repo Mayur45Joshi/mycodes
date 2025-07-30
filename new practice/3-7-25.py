@@ -19,12 +19,18 @@
 # print(larg)
 
 
-# #array rotate
+# #array rotate (Left Rotation by 1):
 # arr=[1,2,3,4,5,6,7]
 # def rotate_arr(arr):
 #     return arr[1:] + arr[:1]
 #
 # print(rotate_arr(arr))
+
+# def rotate_right(arr, k):
+#     k = k % len(arr)
+#     return arr[-k:] + arr[:-k]
+# print(rotate_right([1, 2, 3, 4, 5], 2))  # Output: [4, 5, 1, 2, 3]
+
 
 
 #array rotate alogorithm
@@ -86,10 +92,10 @@
 # print(indices)
 
 
-#Find most frequent element in a list
+#Find most frequent repeate element in a list
 # def most_fre(List):
 #     counter=0
-#     num=List[0]
+#     #num=List[0]
 #     for i in List :
 #         curr_freq=List.count(i)
 #         if curr_freq > counter:
@@ -97,7 +103,8 @@
 #             num=i
 #     return num
 #
-# List=[1,2,2,4,2,2,2,2,8,5,9]
+# # List=[1,2,2,4,2,2,2,2,8,5,9]
+# List="55788888888961212121111111111111111111"
 # print(most_fre(List))
 
 
@@ -122,7 +129,7 @@
 # print(lst1)
 
 
-##Move all the zeroes to one side of array and ones to right side of array
+# #Move all the zeroes to one side of array and ones to right side of array
 # def zeroonefun(arr):
 #     zeros=[x for x in arr if x==0]
 #     ones=[x for x in arr if x==1]

@@ -26,7 +26,7 @@
 #
 # s=[10,25,36,78,96,70]
 # max1=max2=(float('-inf'))
-# min1=min2=0
+# min1=min2=float('inf')
 # for num in s:
 #     if num>max1:
 #         max2=max1
@@ -37,16 +37,16 @@
 # print(max2)
 #
 # for num in s:
-#     if num>min1:
+#     if num<min1:
+#         min2=min1
+#         min1=num
+#     elif num <min2 and num != min1:
 #         min2=num
-#         # max1=num
-#     # elif num <min1 and num != min1:
-#     #     min2=num
 # print(min2)
 
 
-# #squring numbers using MAp function
-#
+#squring numbers using MAp function
+
 # def square_num(x):
 #     return x**2
 # numbers=[1,2,3,4,5]
@@ -143,7 +143,7 @@
 
 
 
-with open("new 2"
-          ".txt", "w") as file:
-   file.write("Hello, World!")
-   print ("Content added Successfully!!")
+# with open("new 2"
+#           ".txt", "w") as file:
+#    file.write("Hello, World!")
+#    print ("Content added Successfully!!")

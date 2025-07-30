@@ -1,4 +1,4 @@
-# shift zeros
+# # shift zeros
 # arr=[1,3,0,6,0,7,0,8,9]
 # def shiftzero(arr):
 #     zeros=[]
@@ -52,6 +52,17 @@
 # print(" ".join(lst))
 
 
+# #alternate word reverse
+# sen="Honesty is best Policy"
+# lst=sen.split(" ")
+# #lst[0]=lst[0][::-1]
+# for word in range(len(lst)):
+#     if word %2==0:
+#         lst[word]=lst[word][::-1]
+# #print(lst0)
+# print(" ".join(lst))
+
+
 
 # # sorted string + on sorted finding second max and second min
 # arr=[7,8,2,9,4,6,3]
@@ -79,7 +90,7 @@
 
 
 
-# #occurancy of each nmber
+#occurancy of each nmber
 # def countoccurance(str):
 #
 #     str="Mayur Joshi"
@@ -94,3 +105,40 @@
 # print(countoccurance(str))
 
 
+# # Remove negative numbers from string or list
+# a=[2,-3,-2,3,5,-6,1,0,-6,1,4,6]
+# def remove_neg(a):
+#
+#     for num in a[:]:
+#         if num < 0:
+#             a.remove(num)
+#         elif num >= 0:
+#             print(num)
+#
+#     return num
+# remove_neg(a)
+
+#another way of above program
+# a=[2,-3,-2,3,5,-6,1,0,-6,1,4,6]
+# def remove_neg(a):
+#     for num in a:
+#         if num >= 0:
+#             pass
+#     return [num for num in a if num >=0]
+#
+# print(remove_neg(a))
+
+
+# a=[2,-3,-2,3,5,-6,1,0,-6,1,4,6]
+# def remove_neg(a):
+#     result=[]
+#     for num in a:
+#         if num >=0:
+#             result.append(num)
+#     return result
+#
+# print(remove_neg(a))
+
+
+#a = "123abc345def435ghi"
+#output = 123cba345fed45ihg

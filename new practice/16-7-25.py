@@ -107,7 +107,7 @@ from collections import Counter
 #     result=""
 #     seen=set()
 #
-#     for char in strs:
+#     for char in strs
 #         if char not in seen:
 #             seen.add(char)
 #             result+=char
@@ -116,6 +116,24 @@ from collections import Counter
 #
 # strs="mamaghrgh"
 # print(remove_duplicate(strs))
+
+
+
+# #print duplicates + results also in o/p
+# def duplicates(strt):
+#     seen = set()
+#     duplicates = set()
+#     result = ""
+#     for char in strt:
+#         if char in seen:
+#             duplicates.add(char)
+#         else:
+#             seen.add(char)
+#             result += char
+#     print("duplicates", "".join(duplicates))
+#     return result
+# strt = "mayurbdfsdhd"
+# print("non duplicates", duplicates(strt))
 
 
 

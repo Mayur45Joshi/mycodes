@@ -11,8 +11,8 @@ from selenium.webdriver.support.wait import WebDriverWait
 expectedList = ['Cucumber - 1 Kg', 'Raspberry - 1/4 Kg', 'Strawberry - 1/4 Kg']
 actualList =[]
 
-service_obj = Service("/Users/rahulshetty/documents/chromedriver")
-driver = webdriver.Chrome(service=service_obj)
+#service_obj = Service("/Users/rahulshetty/documents/chromedriver")
+driver = webdriver.Chrome()
 driver.implicitly_wait(2)
 # 5 seconds is max time out.. 2 seconds (3 seconds save)
 driver.get("https://rahulshettyacademy.com/seleniumPractise/#/")

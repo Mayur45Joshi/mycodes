@@ -12,10 +12,12 @@ driver.find_element(By.XPATH,"//input[@id='autocomplete']").send_keys("Mayur")
 dropdwon=driver.find_element(By.ID,"dropdown-class-example")
 dd=Select(dropdwon)
 dd.select_by_visible_text('Option3')
+
 # all_opt=dd.options
 # print(all_opt)
 
 checkboxs=driver.find_elements(By.XPATH,"//div[@id='checkbox-example']//input")
+
 for checkbox in checkboxs:
     val=checkbox.get_attribute("value")
     if val == 'option2':

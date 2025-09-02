@@ -123,13 +123,13 @@
 
 #?????????????????????????????????????????????????????????????
 
-#Given a string, reverse each word in the string and replace spaces with the % character. The order of the words should be maintained, but the characters within each word should be reversed..
-
-str=input("enter any sentense").split(" ")
-new_str=[]
-for char in str:
-
-    new_str.append(char[::-1])
-    res="%".join(new_str)
-
-print(res)
+# #Given a string, reverse each word in the string and replace spaces with the % character. The order of the words should be maintained, but the characters within each word should be reversed..
+#
+# str=input("enter any sentense").split(" ")
+# new_str=[]
+# for char in str:
+#
+#     new_str.append(char[::-1])
+#     res="%".join(new_str)
+#
+# print(res)

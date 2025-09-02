@@ -8,8 +8,8 @@
 # print(sum)
 
 
-# #largest value in array
-#
+#largest value in array
+
 # arr={-714,25,85,96,-1040}
 # larg=0
 # for n in arr:
@@ -19,7 +19,7 @@
 # print(larg)
 
 
-# #array rotate (Left Rotation by 1):
+# # #array rotate (Left Rotation by 1):
 # arr=[1,2,3,4,5,6,7]
 # def rotate_arr(arr):
 #     return arr[1:] + arr[:1]
@@ -48,7 +48,7 @@
 # for i in arr:
 #     mul=mul*i
 #     rem=mul%n
-# print(rem)
+#     print(rem)
 
 
 # #monotonic array check increasing or decresing
@@ -71,6 +71,13 @@
 #     arr[0],arr[-1] = arr[-1],arr[0]
 #     return arr
 # print(swap_str(arr))
+#
+# def swap_first_last(s):
+#     if len(s) <= 1:   # if string is empty or 1 char, return same
+#         return s
+#     return s[-1] + s[1:-1] + s[0]   # last + middle + first
+# s = "mayur"
+# print(swap_first_last(s))
 
 
 # #Python | Find elements of a list by indices
@@ -221,6 +228,23 @@
 #             return char
 # str="aaabbfddhh"
 # print(nonrepeate(str))
+
+
+# def nonrepeate(str):
+#
+#     char_count = {}
+#     for char in str:
+#         if char in char_count:
+#             char_count[char]+=1
+#
+#         else:
+#             char_count[char]=1
+#     max_count=max(char_count.values())
+#     for char,count in char_count.items():
+#         if count==max_count:
+#             print(char,count)
+# nonrepeate("fgdgdgddd")
+
 
 
 # import oracledb

@@ -47,6 +47,8 @@
 #     print("prime number")
 
 
+# Question : Print the Fibonacci sequence up to a given number of terms.
+# Question : Check if a given number is a perfect square.
 
 
 

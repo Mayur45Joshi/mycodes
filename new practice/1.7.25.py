@@ -67,18 +67,6 @@
 # print(remove_duplicates("mahhmawr"))
 
 
-# def duplicatesfind(s):
-#     seen=set()
-#     result=[]
-#     for char in s:
-#         if char not in seen:
-#             result.append(char)
-#             seen.add(char)
-#     return result
-# s=['a','d','r','r','t','y','a','u']
-# print(duplicatesfind(s))
-
-
 # #squaring only even numbers
 # inp = [1, 4, 3, 6, 8]
 # def sqare(inp):
@@ -94,7 +82,8 @@
 
 
 # def squarelistcompr(inp):
-#     return [num * num if num % 2 == 0 else num for num in inp]
+#    # return [num * num if num % 2 == 0 else num for num in inp]
+#     return [num**2 if num%2==0 else num for num in inp]
 # inp=[1, 4, 3, 6, 8]
 # print(squarelistcompr(inp))
 
@@ -111,13 +100,16 @@
 # d2 = {'x': 3, 'z': 4}
 # d1.update(d2)
 # print(d1)
-
+# print(d2)
+#
 # #| operator introduced in Python 3.9 can be used to merge dictionaries. It creates a
 # # new dictionary without modifying the original dictionary.
 # d1 = {'x': 1, 'y': 2}
 # d2 = {'y': 3, 'z': 4}
 # d3 = d1 | d2
 # print(d3)
+# print(d1)
+# print(d2)
 
 
 # #reading data in txt file
@@ -126,7 +118,7 @@
 #     print(content)
 
 
-#reading data line in a file one at a time
+# #reading data line in a file one at a time
 # with open (r"D:\STUDY AUTO\files\aim.txt","r") as file:
 #     line=file.readline()
 #     while line:

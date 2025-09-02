@@ -6,6 +6,7 @@ pwd=input("enter password")
 
 driver=webdriver.Chrome()
 driver.get("https://the-internet.herokuapp.com/login")
+assert driver.current_url=="https://the-internet.herokuapp.com/login"
 driver.find_element(By.ID,"username").send_keys(user_name)
 driver.find_element(By.ID,"password").send_keys(pwd)
 driver.find_element(By.XPATH,"//button[@type='submit']").click()

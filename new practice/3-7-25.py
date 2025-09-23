@@ -114,6 +114,20 @@
 # List="55788888888961212121111111111111111111"
 # print(most_fre(List))
 
+# List="55788888888961212121111111111111111111"
+# char_count={}
+# for char in List:
+#     if char in char_count:
+#         char_count[char]+=1
+#     else:
+#         char_count[char]=1
+#
+# max_c=max(char_count.values())
+# for char,count in char_count.items():
+#     if count==max_c:
+#         print(f"Char {char} occurs {count} times")
+
+
 
 # #Finding All Elements with Their Frequencies:
 # from collections import Counter

@@ -142,58 +142,58 @@
 
 #a = "123abc345def435ghi"
 #output = 123cba345fed45ihg
-import re
-a = "123abc345def435ghi"
-# Find all sequences of letters (non-digits) and numbers
-matches = re.findall(r'(\d+|\D+)', a)
-result = ""
-for group in matches:
-    if group.isalpha():
-        result += group[::-1]
-    else:
-        result += group
-print(result)
+# import re
+# a = "123abc345def435ghi"
+# # Find all sequences of letters (non-digits) and numbers
+# matches = re.findall(r'(\d+|\D+)', a)
+# result = ""
+# for group in matches:
+#     if group.isalpha():
+#         result += group[::-1]
+#     else:
+#         result += group
+# print(result)
 
 
-#another way
-a = "123abc345def435ghi"
-result = ""
-temp = ""
-for ch in a:
-    if ch.isdigit():
-        # flush the temp letters (if any) reversed
-        if temp:
-            result += temp[::-1]
-            temp = ""
-        result += ch   # keep number as is
-    else:
-        temp += ch     # collect letters
-# handle last letters block
-if temp:
-    result += temp[::-1]
-print(result)
-
-
-
-a="123abc345def435ghi789"
-result=""
-temp=""
-for char in a:
-    if char.isalpha():
-        if temp:
-            result+=temp[::-1]
-            temp=""
-        result+=char
-    else:
-        temp+=char
-if temp:
-    result+=temp[::-1]
-print(result)
-
-
-
-import re
-a = "123abc345def435ghi"
-result = "".join(map(lambda x: x if x.isdigit() else x[::-1], re.split(r'(\d+)', a)))
-print(result)
+# #another way
+# a = "123abc345def435ghi"
+# result = ""
+# temp = ""
+# for ch in a:
+#     if ch.isdigit():
+#         # flush the temp letters (if any) reversed
+#         if temp:
+#             result += temp[::-1]
+#             temp = ""
+#         result += ch   # keep number as is
+#     else:
+#         temp += ch     # collect letters
+# # handle last letters block
+# if temp:
+#     result += temp[::-1]
+# print(result)
+#
+#
+#
+# a="123abc345def435ghi789"
+# result=""
+# temp=""
+# for char in a:
+#     if char.isalpha():
+#         if temp:
+#             result+=temp[::-1]
+#             temp=""
+#         result+=char
+#     else:
+#         temp+=char
+# if temp:
+#     result+=temp[::-1]
+# print(result)
+#
+#
+#
+# import re
+# a = "123abc345def435ghi"
+# result = "".join(map(lambda x: x if x.isdigit() else x[::-1], re.split(r'(\d+)', a)))
+# print(result)
 

@@ -414,7 +414,7 @@
 # print(is_palindrom_num(12321))
 
 
-# #>>>3>>>>count vowels and constants in string
+# #>>>3>>>>count vowels and consonants in string
 # def vowels_const(str):
 #     vowels="aeiou"
 #     const="abcdfghjklmnpqrstvwxyz"

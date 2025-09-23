@@ -17,6 +17,7 @@
 
 # # pairs giving sum 10
 # List = [2, 5, 4, 1, 12, -2, 8, 9]
+#List="s,d,sds,ds,s,s"
 # target = 10
 # pairs = []
 # for i in range(len(List)):
@@ -146,17 +147,17 @@
 
 
 
-def leader(arr):
-    leader=[]
-    max_val=arr[-1]
-    leader.append(max_val)
-    for i in range(len(arr)-2,-1,-1):
-        if arr[i] > max_val:
-            leader.append(arr[i])
-            max_val=arr[i]
-    print(leader)
-    print(leader[::-1])
-arr=[16, 17, 4, 3, 5, 2]
-leader(arr)
+# def leader(arr):
+#     leader=[]
+#     max_val=arr[-1]
+#     leader.append(max_val)
+#     for i in range(len(arr)-2,-1,-1):
+#         if arr[i] > max_val:
+#             leader.append(arr[i])
+#             max_val=arr[i]
+#     print(leader)
+#     print(leader[::-1])
+# arr=[16, 17, 4, 3, 5, 2]
+# leader(arr)
 
 

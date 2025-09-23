@@ -147,9 +147,9 @@ from collections import Counter
 #     else:
 #         print("no angrama")
 #
-# str1="fjsh"
+# str1="ruyam"
 # str2="mayur"
-# print(anagrams(str1,str2))
+# (anagrams(str1,str2))
 
 
 

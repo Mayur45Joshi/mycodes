@@ -36,19 +36,44 @@
 
 
 
-# Str="12mayur4joshi15"
-# Output=31
-text = "12mayur4joshi15"
-total = 0
-number = ""
-for char in text:
-    if char.isdigit():
-        number += char  # keep adding digit to number
-    else:
-        if number:
-            total += int(number)  # convert and add to total
-            number = ""  # reset number
-#Add last number if string ends with digits
-if number:
-    total += int(number)
-print(total)
+# # Str="12mayur4joshi15"
+# # Output=31
+# text = "12mayur4joshi15"
+# total = 0
+# number = ""
+# for char in text:
+#     if char.isdigit():
+#         number += char  # keep adding digit to number
+#     else:
+#         if number:
+#             total += int(number)  # convert and add to total
+#             number = ""  # reset number
+# #Add last number if string ends with digits
+# if number:
+#     total += int(number)
+# print(total)
+
+#
+# text = "12mayur4joshi15"
+# rev = [ch for ch in text if ch.isalpha()][::-1]
+# result = ""
+# for char in text:
+#     if char.isalpha():
+#         result += rev.pop(0)
+#     else:
+#         result += char
+#
+# print(result)
+
+
+# text = "12mayur4joshi15"
+# result=""
+# temp=""
+# for ch in text:
+#     if ch.isalpha():
+#         temp+=ch
+#     else:
+#         result+=temp[::-1]+ch
+#         temp=""
+# result+=temp[::-1]
+# print(result)

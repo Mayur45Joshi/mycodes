@@ -27,7 +27,7 @@
 # #tuple sorting lambada
 #
 # x=[('English', 88), ('Science', 90), ('Maths', 97), ('Social sciences', 82)]
-# x.sort(key=lambda x:x[1])
+# x.sort(key=lambda x:x[0])
 # print(x)
 
 

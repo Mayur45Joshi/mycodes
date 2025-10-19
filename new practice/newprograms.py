@@ -181,3 +181,36 @@
 # # #Q3.  For integers 1–20, square if even, cube if odd. Strictly use list comprehension
 # square=[x**2 if x%2==0 else x**3 for x in range(1,20)]
 # print(square)
+
+
+# def flatten(lst):
+#     result=[]
+#     for item in lst:
+#         if isinstance(item,list):
+#             result.extend(flatten(item))
+#         else:
+#             result.append(item)
+#     return result
+# x = [1, [2, [3]], 4]
+# print(flatten(x))
+
+
+##remove duplicates without using another list
+# nums = [1, 2, 3, 2, 4, 1, 5]
+# # Loop through the list and remove duplicates in place
+# i = 0
+# while i < len(nums):
+#     if nums[i] in nums[:i]:
+#         nums.pop(i)
+#     else:
+#         i += 1
+# print(nums)
+
+
+# nums = [1, 2, 3, 2, 4, 1, 5]
+# for num in nums[:]:
+#     if nums.count(num)>1:
+#         nums.remove(num)
+# print(nums)
+
+

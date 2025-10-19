@@ -39,16 +39,16 @@
 # print(swap_str(arr))
 
 
-arr1="mayur joshi"
-arr=arr1.split()
-result=[]
-def swap_str(arr):
-    for char in arr:
-        if len(arr)>1:
-            swapped= char[-1] + char[1:-1] + char[0]
-        else:
-            swapped=char
-        result.append(swapped)
-    return result
-
-print(swap_str(arr))
+# arr1="mayur joshi"
+# arr=arr1.split()
+# result=[]
+# def swap_str(arr):
+#     for char in arr:
+#         if len(arr)>1:
+#             swapped= char[-1] + char[1:-1] + char[0]
+#         else:
+#             swapped=char
+#         result.append(swapped)
+#     return result
+#
+# print(swap_str(arr))
